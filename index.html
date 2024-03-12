@@ -86,11 +86,33 @@
         <div class="content has-text-justified">
           <p>
             In this work, we introduce a challenging task for simultaneously generating 3D holistic body motions and singing vocals directly from textual lyrics inputs, advancing beyond existing works that typically address two modalities in isolation (text-to-motion, text-to-audio, or audio-to-motion). 
+          </p>
+          <p>
             To facilitate this, we first collect the <strong>RapVerse</strong> dataset, a large dataset containing synchronous rapping vocals, lyrics, and high-quality 3D holistic body meshes.
+          </p>
+          <p>
             With the RapVerse dataset, we investigate the extent to which scaling autoregressive multimodal transformers across language, audio, and motion can enhance the coherent and realistic generation of vocals and whole-body human motions.
             For modality unification, a vector-quantized variational autoencoder is employed to encode whole-body motion sequences into discrete motion tokens, while a vocal-to-unit model is leveraged to obtain quantized audio tokens preserving content, prosodic information and singer identity. By jointly performing transformer modeling on these three modalities in a unified way, our framework ensures a seamless and realistic blend of vocals and human motions. Extensive experiments demonstrate that our unified generation framework not only produces coherent and realistic singing vocals alongside human motions directly from textual inputs, but also rivals the performance of specialized single-modality generation systems, establishing new benchmarks for joint vocal-motion generation.
-            Human-centric video frame interpolation has great potential for improving people's entertainment experiences and finding commercial applications in the sports analysis industry, e.g., synthesizing slow-motion videos.
           </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Task Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            Given a textual lyric input, we propose a novel task for generating coherent singing vocals and whole-body human motions (including body motions, hand gestures, and facial expressions) simultaneously.
+          </p>
+          <video id="teaser" autoplay loop playsinline height="100%">
+            <source src="videos/teaser_video_v0.mp4" type="video/mp4">
         </div>
       </div>
     </div>
@@ -135,6 +157,8 @@
   </div>
 </section>
 
+
+
 <section class="section">
   <div class="container is-max-desktop">
   <!-- Paper video. -->
@@ -157,10 +181,25 @@
               <th>FastSpeech 2</th>
               </tr>
               <tr>
-              <td><audio controls preload="none"><source src="wavs/115229_gt.wav"></audio></td>
-              <td><audio controls preload="none"><source src="wavs/115229_ours.wav"></audio></td>
-              <td><audio controls preload="none"><source src="wavs/115229_ds.wav"></audio></td>
-              <td><audio controls preload="none"><source src="wavs/115229_fs2.wav"></audio></td>
+              <td>
+                <div class="is-flex is-justify-content-center">
+                <audio controls preload="none"><source src="wavs/115229_gt.wav"></audio>
+                </div>
+              </td>
+              <td>
+                <div class="is-flex is-justify-content-center">
+                  <audio controls preload="none"><source src="wavs/115229_ours.wav"></audio>
+                </div>
+              </td>
+              <td>
+                <div class="is-flex is-justify-content-center">
+                <audio controls preload="none"><source src="wavs/115229_ds.wav"></audio>
+              </td>
+              <td>
+                <div class="is-flex is-justify-content-center">
+                <audio controls preload="none"><source src="wavs/115229_fs2.wav"></audio>
+              </div>
+            </td>
               </tr>
             </tbody>
           </table>
@@ -175,10 +214,11 @@
               <th>FastSpeech 2</th>
               </tr>
               <tr>
-              <td><audio controls preload="none"><source src="wavs/115103_gt.wav"></audio></td>
-              <td><audio controls preload="none"><source src="wavs/115103_ours.wav"></audio></td>
-              <td><audio controls preload="none"><source src="wavs/115103_ds.wav"></audio></td>
-              <td><audio controls preload="none"><source src="wavs/115103_fs2.wav"></audio></td>
+              <td><div class="is-flex is-justify-content-center"><audio controls preload="none"><source src="wavs/115103_gt.wav"></audio>
+              </div></td>
+              <td><div class="is-flex is-justify-content-center"><audio controls preload="none"><source src="wavs/115103_ours.wav"></audio></div></td>
+              <td><div class="is-flex is-justify-content-center"><audio controls preload="none"><source src="wavs/115103_ds.wav"></audio></div></td>
+              <td><div class="is-flex is-justify-content-center"><audio controls preload="none"><source src="wavs/115103_fs2.wav"></audio></div></td>
               </tr>
             </tbody>
           </table>
@@ -193,10 +233,10 @@
               <th>FastSpeech 2</th>
               </tr>
               <tr>
-              <td><audio controls preload="none"><source src="wavs/000297_gt.wav"></audio></td>
-              <td><audio controls preload="none"><source src="wavs/000297_ours.wav"></audio></td>
-              <td><audio controls preload="none"><source src="wavs/000297_ds.wav"></audio></td>
-              <td><audio controls preload="none"><source src="wavs/000297_fs2.wav"></audio></td>
+              <td><div class="is-flex is-justify-content-center"><audio controls preload="none"><source src="wavs/000297_gt.wav"></audio></div></td>
+              <td><div class="is-flex is-justify-content-center"><audio controls preload="none"><source src="wavs/000297_ours.wav"></audio></div></td>
+              <td><div class="is-flex is-justify-content-center"><audio controls preload="none"><source src="wavs/000297_ds.wav"></audio></div></td>
+              <td><div class="is-flex is-justify-content-center"><audio controls preload="none"><source src="wavs/000297_fs2.wav"></audio></div></td>
               </tr>
             </tbody>
           </table>
